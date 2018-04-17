@@ -1,0 +1,1 @@
+docker container run -p 8001:8001 -p 9929:9929 --rm -it node/attach

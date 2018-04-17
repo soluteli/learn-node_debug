@@ -1,0 +1,25 @@
+{
+  "name": "node-debug-demo",
+  "version": "1.0.0",
+  "description": "",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "debug": "node --inspect=9929 npm/app.js",
+    "build:coffee": "coffee -c -m -w -o ./coffee/dist/ ./coffee/src",
+    "build:es6": "babel ./es6/src -s -w -d ./es6/dist/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "main": "./vscode/01-sample.js",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "coffeescript": "^2.2.4",
+    "express": "^4.16.3"
+  }
+}
