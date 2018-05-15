@@ -6,38 +6,6 @@
   "configurations": [
     {
       "type": "node",
-      "request": "launch",
-      "name": "es6:nodemon",
-      "runtimeExecutable": "nodemon",
-      "program": "${workspaceFolder}/es6/dist/app.js",
-      "restart": true,
-      "console": "integratedTerminal",
-      "internalConsoleOptions": "neverOpen"
-    },
-    {
-      "type": "node",
-      "request": "launch",
-      "protocol": "inspector",
-      "name": "nodemon",
-      "runtimeExecutable": "nodemon",
-      "program": "${workspaceFolder}/nodemon/app.js",
-      "restart": true,
-      "console": "integratedTerminal",
-      "internalConsoleOptions": "neverOpen"
-    },
-    {
-      "type": "node",
-      "request": "launch",
-      "name": "Launch via NPM",
-      "runtimeExecutable": "npm",
-      "runtimeArgs": [
-        "run",
-        "debug"
-      ],
-      "port": 9929
-    },
-    {
-      "type": "node",
       "request": "attach",
       "name": "Docker: Attach to Node",
       "port": 9929,
@@ -49,12 +17,41 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "coffee",
+      "name": "es6:nodemon",
       "runtimeExecutable": "nodemon",
-      "program": "${workspaceFolder}/coffee/src/index.coffee",
-      "outFiles": [
-        "${workspaceFolder}/coffee/dist/**.*"
+      "program": "${workspaceFolder}/es6/dist/app.js",
+      "restart": true,
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "coffee:nodemon",
+      "runtimeExecutable": "nodemon",
+      "program": "${workspaceFolder}/coffee/dist/index.js",
+      "restart": true,
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "vscode NPM",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "debug"
       ],
+      "port": 9929
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "protocol": "inspector",
+      "name": "vscode nodemon",
+      "runtimeExecutable": "nodemon",
+      "program": "${workspaceFolder}/nodemon/app.js",
       "restart": true,
       "console": "integratedTerminal",
       "internalConsoleOptions": "neverOpen"
@@ -63,14 +60,14 @@
       "type": "node",
       "request": "launch",
       "protocol": "inspector",
-      "name": "vs launch cur file",
+      "name": "vscode cur file",
       "program": "${file}"
     },
     {
       "type": "node",
       "request": "launch",
       "protocol": "inspector",
-      "name": "vscode Launch cwd",
+      "name": "vscode cwd",
       "program": "${workspaceFolder}/vscode/04-cwd.js",
       "cwd": "${workspaceFolder}/legacy"
     },
@@ -78,7 +75,7 @@
       "type": "node",
       "request": "launch",
       "protocol": "inspector",
-      "name": "vscode Launch env",
+      "name": "vscode env",
       "program": "${workspaceFolder}/vscode/03-env.js",
       "env": {
         "level": "info"
@@ -88,7 +85,7 @@
       "type": "node",
       "request": "launch",
       "protocol": "inspector",
-      "name": "vscode Launch args",
+      "name": "vscode args",
       "program": "${workspaceFolder}/vscode/02-args.js",
       "args":[
         "c",
@@ -100,14 +97,22 @@
       "type": "node",
       "request": "launch",
       "protocol": "inspector",
-      "name": "vscode Launch sample",
+      "name": "vscode sample",
       "program": "${workspaceFolder}/vscode/01-sample.js"
     },
     {
       "type": "node",
       "request": "launch",
-      "name": "Demo",
-      "program": "${workspaceFolder}/inspector/demo.js",
+      "protocol": "inspector",
+      "name": "just inspector Demo",
+      "program": "${workspaceFolder}/inspector/demo.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "protocol": "legacy",
+      "name": "just legacy Demo",
+      "program": "${workspaceFolder}/legacy/demo.js"
     }
   ]
 }
