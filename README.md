@@ -1,5 +1,5 @@
 ## node-debug
-Vscode 调试 Javascript 的各种调试。
+Vscode 调试 Javascript 的各种姿势。
 
 ## legacy 协议
 - 源码目录： `./legacy/demo.js`   
